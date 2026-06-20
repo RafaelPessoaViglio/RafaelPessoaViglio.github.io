@@ -1,6 +1,6 @@
 ---
 title: "Understanding UDP Servers: Connectionless Architecture and Stateless Traffic"
-date: 2026-06-20 15:45:00 -0300
+date: 2026-06-20 
 categories:
   - Networking
   - Infrastructure
