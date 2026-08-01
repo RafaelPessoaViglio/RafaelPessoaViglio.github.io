@@ -1,0 +1,23 @@
+---
+title: Understanding Man-in-the-Middle Attacks: Mechanics and Threats
+date: 2026-08-01 15:40:00 -0300
+categories: [Cybersecurity, Networking]
+tags: [mitm, security, architecture, wireshark]
+---
+
+### What is a Man-in-the-Middle Attack?
+
+A Man-in-the-Middle (MitM) attack is a network threat where an attacker intercept data packets moving within a network while a client exchanges information with a server. The ultimate goal of this interception is to harvest sensitive credentials, session tokens, and passwords.
+
+This attack typically occurs when an intruder gains direct access to an open or public network. In these environments, the attacker does not necessarily need to crack heavy encryption layers to discover credentials. Instead, they often deploy phishing tactics—such as setting up rogue access points—to trick users into connecting to the compromised network without any suspicion.
+
+### The Role of Packet Sniffers
+
+The premier tool utilized in executing and analyzing network interception during a MitM scenario is the renowned packet analyzer, **Wireshark**. This software is capable of capturing and inspecting packets inside a local network, allowing attackers to extract raw credentials when clients communicate over unencrypted protocols.
+
+### MitM Mitigation and Defense
+
+Preventing a Man-in-the-Middle attack heavily relies on end-user cybersecurity awareness. We can break down the fundamental defense mechanisms into key practices:
+
+1. **Avoiding Untrusted Networks**: Users should strictly avoid connecting to public or open Wi-Fi networks without verification.
+2. **Encrypted Protocols**: Ensuring all web communication is strictly enforced over secure, encrypted protocols like HTTPS, which prevents clear-text data viewing even if packets are intercepted.
